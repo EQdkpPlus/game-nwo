@@ -23,22 +23,27 @@ $german_array = array(
 
 	'classes' => array(
 		0 => 'Unbekannt',
-		1 => 'Kämpfer',
-		2 => 'Kleriker',
-		3 => 'Schurke',
-		4 => 'Zauberer',
+		1 => 'Zweihandwaffenkämpfer',
+		2 => 'Glaubenskleriker',
+		3 => 'Trickserschurke',
+		4 => 'Taktischer Magier',
+		5 => 'Beschützender Kämpfer',
+		6 => 'Wachsamer Waldläufer',
 	),
 	
 	'races' => array(
-		'Unknown',
+		'Unbekannt',
 		'Drow',
 		'Zwerg',
-		'Elf',
-		'Halbelf',
+		'Waldelf',
+		'Halb-Elf',
 		'Halbling',
 		'Mensch',
 		'Tiefling',
-		'Drachengeborener',
+		'Menzo-Abtrünnigen',
+		'Mondelf',
+		'Sonnenelf',
+		'Halb-Orc',
 	),
 
 	'lang' => array(

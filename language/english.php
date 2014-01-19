@@ -23,22 +23,27 @@ $english_array = array(
 
 	'classes' => array(
 		0 => 'Unknown',
-		1 => 'Fighter',
-		2 => 'Cleric',
-		3 => 'Rogue',
-		4 => 'Wizard',
+		1 => 'Great Weapon Fighter',
+		2 => 'Devoted Cleric',
+		3 => 'Trickster Rogue',
+		4 => 'Control Wizard',
+		5 => 'Guardian Fighter',
+		6 => 'Hunter Ranger',
 	),
 	
 	'races' => array(
 		'Unknown',
 		'Drow',
 		'Dwarf',
-		'Elf',
-		'Half-Elf',
+		'Wood Elf',
+		'Half Elf',
 		'Halfling',
 		'Human',
 		'Tiefling',
-		'Dragonborn',
+		'Menzoberranzan Renegade',
+		'Moon Elf',
+		'Sun Elf',
+		'Half Orc',
 	),
 
 	'lang' => array(
