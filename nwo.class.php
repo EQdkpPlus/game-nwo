@@ -35,7 +35,7 @@ if(!class_exists('nwo')) {
 		protected $lang_file	= array();
 		protected $path			= '';
 		public $lang			= false;
-		public $version			= '0.1';		
+		public $version			= '0.2';
 
 		/**
 		* Initialises filters
@@ -64,12 +64,12 @@ if(!class_exists('nwo')) {
 		public function get_OnChangeInfos($install=false){
 			//classcolors
 			$info['class_color'] = array(
-				1 => '#ff0000',
-				2 => '#008000',
-				3 => '#ffff00',
-				4 => '#800080',
-				5 => '#00ff00',
-				6 => '#0000ff',
+				1	=> '#ff0000',
+				2	=> '#ffff00',
+				3	=> '#600000',
+				4	=> '#800080',
+				5	=> '#FFA500',
+				6	=> '#008000',
 			);
 			
 			$info['aq'] = array();
