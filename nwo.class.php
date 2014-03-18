@@ -22,20 +22,69 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('nwo')) {
 	class nwo extends game_generic {
+		public $version			= '0.2';
 		protected $this_game	= 'nwo';
-		protected $types		= array('classes', 'races', 'factions', 'filters');
-		public $icons			= array('classes', 'classes_big', 'events', 'races');
+		protected $types		= array('classes', 'races', 'filters');
 		protected $classes		= array();
 		protected $races		= array();
 		protected $factions		= array();
 		protected $filters		= array();
 		public $langs			= array('english', 'german');
 
+		protected $class_dependencies = array(
+			array(
+				'name'		=> 'race',
+				'type'		=> 'races',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'parent'	=> false
+			),
+			array(
+				'name'		=> 'class',
+				'type'		=> 'classes',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'primary'	=> true,
+				'colorize'	=> true,
+				'roster'	=> true,
+				'recruitment' => true,
+				'parent'	=> false
+			),
+		);
+		
+		protected $class_colors = array(
+			1	=> '#ff0000',
+			2	=> '#ffff00',
+			3	=> '#600000',
+			4	=> '#800080',
+			5	=> '#FFA500',
+			6	=> '#008000',
+		);
+
 		protected $glang		= array();
 		protected $lang_file	= array();
 		protected $path			= '';
 		public $lang			= false;
-		public $version			= '0.2';
+
+		public function profilefields(){
+			$xml_fields = array(
+				'gender'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'character',
+					'lang'			=> 'uc_gender',
+					'options'		=> array('Male' => 'uc_male', 'Female' => 'uc_female'),
+					'undeletable'	=> true,
+				),
+				'guild'	=> array(
+					'type'			=> 'text',
+					'category'		=> 'character',
+					'lang'			=> 'uc_guild',
+					'size'			=> 40,
+					'undeletable'	=> true,
+				),
+			);
+			return $xml_fields;
+		}
 
 		/**
 		* Initialises filters
@@ -62,15 +111,6 @@ if(!class_exists('nwo')) {
 		* @return array
 		*/
 		public function get_OnChangeInfos($install=false){
-			//classcolors
-			$info['class_color'] = array(
-				1	=> '#ff0000',
-				2	=> '#ffff00',
-				3	=> '#600000',
-				4	=> '#800080',
-				5	=> '#FFA500',
-				6	=> '#008000',
-			);
 			
 			$info['aq'] = array();
 

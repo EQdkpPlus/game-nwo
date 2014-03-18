@@ -20,46 +20,44 @@ if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
 $german_array = array(
-
 	'classes' => array(
-		0 => 'Unbekannt',
-		1 => 'Zweihandwaffenkämpfer',
-		2 => 'Glaubenskleriker',
-		3 => 'Trickserschurke',
-		4 => 'Taktischer Magier',
-		5 => 'Beschützender Kämpfer',
-		6 => 'Wachsamer Waldläufer',
+		0	=> 'Unbekannt',
+		1	=> 'Zweihandwaffenkämpfer',
+		2	=> 'Glaubenskleriker',
+		3	=> 'Trickserschurke',
+		4	=> 'Taktischer Magier',
+		5	=> 'Beschützender Kämpfer',
+		6	=> 'Wachsamer Waldläufer',
 	),
 	
 	'races' => array(
-		'Unbekannt',
-		'Drow',
-		'Zwerg',
-		'Waldelf',
-		'Halb-Elf',
-		'Halbling',
-		'Mensch',
-		'Tiefling',
-		'Menzo-Abtrünnigen',
-		'Mondelf',
-		'Sonnenelf',
-		'Halb-Orc',
+		0	=> 'Unbekannt',
+		1	=> 'Drow',
+		2	=> 'Zwerg',
+		3	=> 'Waldelf',
+		4	=> 'Halb-Elf',
+		5	=> 'Halbling',
+		6	=> 'Mensch',
+		7	=> 'Tiefling',
+		8	=> 'Menzo-Abtrünnigen',
+		9	=> 'Mondelf',
+		10	=> 'Sonnenelf',
+		11	=> 'Halb-Orc',
 	),
 
 	'lang' => array(
-		'nwo' => 'Neverwinter Online',
-		'plate'	=> 'Platte',
-		'scale' => 'Schuppenrüstung',
-		'heavy' => 'Schwere Rüstung',
-		'medium' => 'Leder',
-		'light' => 'Stoff',	
+		'nwo'							=> 'Neverwinter Online',
+		'plate'							=> 'Platte',
+		'scale'							=> 'Schuppenrüstung',
+		'heavy'							=> 'Schwere Rüstung',
+		'medium'						=> 'Leder',
+		'light'							=> 'Stoff',	
 		
 		// profile additions
 		'uc_gender'						=> 'Geschlecht',
 		'uc_male'						=> 'Männlich',
 		'uc_female'						=> 'Weiblich',
 		'uc_guild'						=> 'Gilde',
-	),
-	
+	),	
 );
 ?>
