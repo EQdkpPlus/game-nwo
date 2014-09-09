@@ -57,6 +57,8 @@ $english_array = array(
 		'uc_male'						=> 'Male',
 		'uc_female'						=> 'Female',
 		'uc_guild'						=> 'Guild',
+		'uc_race'						=> 'Race',
+		'uc_class'						=> 'Class',
 	),
 );
 ?>
