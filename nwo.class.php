@@ -74,12 +74,13 @@ if(!class_exists('nwo')) {
 					'lang'			=> 'uc_gender',
 					'options'		=> array('Male' => 'uc_male', 'Female' => 'uc_female'),
 					'undeletable'	=> true,
+					'tolang'		=> true,
 				),
 				'guild'	=> array(
 					'type'			=> 'text',
 					'category'		=> 'character',
 					'lang'			=> 'uc_guild',
-					'size'			=> 40,
+					'size'			=> 32,
 					'undeletable'	=> true,
 				),
 			);
